@@ -8,50 +8,60 @@ body{
     min-height: calc(100vh - 3rem);
     display: grid;
     place-items: center;
+    background-color: hsl(0, 0%, 67%);
 }
 main{
     padding: 3em 0;
     width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    background-color: white;
+    
 }
 .container-options{
-    width: 30%;
-    padding: 1em;
+    width: 80%;
+    padding: 1em 1.5em;
+
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
 
-    border-radius: 0.3em;
-    box-shadow: 0 0 0.5em 0 hsl(0, 0%, 20%);
+    /* box-shadow: 1px 0 0.3rem rgba(0, 0, 0, 0.473); */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 
-    background-color: white;
+    background-color: hsl(0, 0%, 93%);
 }
 .list-options{
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 1em;
+
+    /* background-color: lightcoral; */
 }
+
 .btn-option{
     background: none;
     cursor: pointer;
     outline: none;
     border: none;
 }
+
 .editor{
-    min-height: 500px;
-    width: 500px;
+    min-height: 30em;
+    width: 80%;
 
     padding: 1em 0.75em;
 
-    border-radius: 0.5em;
-    box-shadow: 0 0 0.60em 0 hsl(0, 0%, 20%);
-
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    /* box-shadow: 0 15px 1rem grey; */
+    
     background-color: white;
     color: black;
 }
-
+.editor:focus{
+    outline: none;
+}

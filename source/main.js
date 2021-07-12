@@ -8,6 +8,10 @@ function load(){
 tools.forEach(btn => {
     let cmd = btn.dataset.command;
     btn.addEventListener('click', ()=>{
-        document.execCommand(cmd, false, null)
+        applyCommand(cmd);
     })
 });
+
+function applyCommand(command){
+    document.execCommand(command, false, null);
+}

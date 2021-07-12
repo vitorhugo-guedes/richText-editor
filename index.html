@@ -5,27 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Edit</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <main>
         <section class="container-options">
-            <ul id="listOptions" class="list-options">
+
+            <!-- Format options -->
+            <ul class="list-options text-options">
                 <li class="option" data-command="bold">
-                    <button class="btn-option"><i class="fas fa-bold fa-2x"></i></button>
+                    <button class="btn-option" title="Negrito | Bold"><i class="fas fa-bold fa-2x"></i></button>
                 </li>
                 <li class="option" data-command="italic">
-                    <button class="btn-option"><i class="fas fa-italic fa-2x"></i></button>
+                    <button class="btn-option" title="Itálico | Italic"><i class="fas fa-italic fa-2x"></i></button>
                 </li>
                 <li class="option" data-command="underline">
-                    <button class="btn-option"><i class="fas fa-underline fa-2x"></i></button>
+                    <button class="btn-option" title="Sublinhado | Underline"><i class="fas fa-underline fa-2x"></i></button>
+                </li>
+                <li class="option" data-command="cut">
+                    <button class="btn-option" title="Recortar | Cut"><i class="fas fa-cut fa-2x"></i></button>
+                </li>
+                <li class="option" data-command="copy">
+                    <button class="btn-option" title="Copiar | Copy"><i id="copy-icon" class="far fa-copy fa-2x"></i></button>
+                </li>
+                <li class="option" data-command="paste">
+                    <button class="btn-option" title="Colar | Paste"><i class="fas fa-paste fa-2x"></i></button>
+                </li>
+            </ul>
+
+            <!-- Alignment options -->
+            <ul class="list-options alignment-options">
+                <li class="option" data-command="indent">
+                    <button class="btn-option" title="Espaço a direita | Indent"><i class="fas fa-indent fa-2x"></i></button>
+                </li>
+                <li class="option" data-command="justifyLeft">
+                    <button class="btn-option" title="Texto a esquerda | Text Left"><i class="fas fa-align-left fa-2x"></i></button>
+                </li>
+                <li class="option" data-command="justifyCenter">
+                    <button class="btn-option" title="Centralizar | Centralize"><i class="fas fa-align-center fa-2x"></i></button>
+                </li>
+                <li class="option" data-command="justifyRight">
+                    <button class="btn-option" title="Texto a direita | Text Right"><i class="fas fa-align-right fa-2x"></i></button>
+                </li>
+                <li class="option" data-command="outdent">
+                    <button class="btn-option" title="Espaço a esquerda | Outdent"><i class="fas fa-outdent fa-2x"></i></button>
+                </li>
+            </ul>
+
+            <!-- Font Options -->
+            <ul class="list-options font-options">
+                <li class="option" data-command="justifyFull">
+                    <button class="btn-option" title="Texto a direita | Text Right"><i class="fas fa-align-right fa-2x"></i></button>
                 </li>
             </ul>
         </section>
         <section onload="load()" id="editor" contenteditable="true" class="editor"></section>
     </main>
 
-    <script src="main.js"></script>
+    <script src="/source/main.js"></script>
 </body>
 </html>
