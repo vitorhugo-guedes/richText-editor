@@ -10,6 +10,13 @@ body{
     place-items: center;
     background-color: hsl(0, 0%, 67%);
 }
+
+footer{
+    color: #3b3b3b;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
 main{
     padding: 3em 0;
     width: 100%;
