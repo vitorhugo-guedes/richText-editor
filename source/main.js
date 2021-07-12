@@ -13,5 +13,11 @@ tools.forEach(btn => {
 });
 
 function applyCommand(command){
-    document.execCommand(command, false, null);
+    if(command === 'insertImage' || command === 'createLink'){
+        let value = prompt('insert here:', 'http://');
+        document.execCommand(command, false, value);
+    }else{
+        document.execCommand(command, false, null);
+    }
+    
 }
