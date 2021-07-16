@@ -12,10 +12,13 @@
 .selects{
     width: 50%;
     min-width: 130px;
-    border: none;
     padding: 0.175em;
-    font-weight: 600;
     
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.040em;
+
+    border: none;
     color: #fff;
     background-color: #696969;
 }
@@ -28,4 +31,8 @@
     cursor: pointer;
     outline: none;
     border: none;
+}
+
+.btn-option:hover{
+    opacity: 0.7;
 }
