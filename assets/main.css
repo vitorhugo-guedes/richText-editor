@@ -24,6 +24,9 @@ footer h4{
     cursor: default;
     margin-top: 1em;
 }
+footer h4:hover{
+    color: #F4F482;
+}
 
 main{
     padding: 3em 0;
