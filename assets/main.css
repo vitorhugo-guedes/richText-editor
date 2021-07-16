@@ -1,4 +1,4 @@
-*{
+*, *::before, *::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -20,10 +20,12 @@ main{
     align-items: center;
     
 }
-.container-options{
+.container{
     width: 80%;
+    max-width: 1100px;
     padding: 1em 1.5em;
-
+}
+.container-options{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,13 +36,26 @@ main{
 
     background-color: hsl(0, 0%, 93%);
 }
+
+.container-fonts{
+    display: flex;
+    background-color: hsl(0, 0%, 93%);
+}
+
 .list-options{
     list-style: none;
     display: flex;
+    justify-content: center;
     margin: 0 1em;
     gap: 1em;
 
     /* background-color: lightcoral; */
+}
+
+.alignment-options, 
+.text-options, 
+.other-options{
+    width: 30%;
 }
 
 .btn-option{
@@ -53,7 +68,7 @@ main{
 .editor{
     min-height: 30em;
     width: 80%;
-
+    max-width: 1100px;
     padding: 1em 0.75em;
 
     border-bottom-left-radius: 0.5rem;

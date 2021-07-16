@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <section class="container-options">
+        <section class="container container-options">
 
             <!-- Format options -->
             <ul class="list-options text-options">
@@ -57,7 +57,7 @@
             </ul>
 
             <!-- Font Options -->
-            <ul class="list-options font-options">
+            <ul class="list-options other-options">
                 
                 <li class="option" data-command="undo">
                     <button class="btn-option" title="Desfazer | Undo"><i class="fas fa-undo fa-2x"></i></button>
@@ -66,12 +66,17 @@
                     <button class="btn-option" title="Refazer | Redo"><i class="fas fa-redo fa-2x"></i></button>
                 </li>
                 <li class="option" data-command="createLink">
-                    <button class="btn-option" title="Incluir Link | Insert Link"><i class="fas fa-link fa-2x"></i></button>
+                    <button class="btn-option " title="Incluir Link | Insert Link"><i class="fas fa-link fa-2x "></i></button>
                 </li>
                 <!-- <li class="option" data-command="insertImage">
                     <button class="btn-option" title="Desfazer | Undo"><i class="fas fa-file-image fa-2x"></i></button>
                 </li> -->
             </ul>
+        </section>
+        <section class="container container-fonts">
+            <select name="fontS" id="fontSize">
+                <option>Font Size</option>
+            </select>
         </section>
         <section onload="load()" id="editor" contenteditable="true" class="editor"></section>
     </main>
