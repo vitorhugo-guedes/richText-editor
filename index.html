@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Edit</title>
     <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/utilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
@@ -74,9 +75,18 @@
             </ul>
         </section>
         <section class="container container-fonts">
-            <select name="fontS" id="fontSize">
-                <option>Font Size</option>
+
+            <select name="fontS" id="fontSize" class="selects">
+                <option>Fonte</option>
+                <option value="1">Muito pequena</option>
+                <option value="2">Pequena</option>
+                <option value="3">Normal</option>
+                <option value="4">Médio</option>
+                <option value="5">Grande</option>
+                <option value="6">Muito Grande</option>
+                <option value="7">Máximo</option>
             </select>
+
         </section>
         <section onload="load()" id="editor" contenteditable="true" class="editor"></section>
     </main>
