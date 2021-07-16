@@ -10,12 +10,14 @@
 }
 
 .selects{
+    width: 50%;
+    min-width: 130px;
     border: none;
     padding: 0.175em;
     font-weight: 600;
-
+    
     color: #fff;
-    background-color: #8a8989;
+    background-color: #696969;
 }
 .selects:focus{
     border: none;

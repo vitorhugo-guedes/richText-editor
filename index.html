@@ -74,18 +74,46 @@
                 </li> -->
             </ul>
         </section>
+
         <section class="container container-fonts">
 
-            <select name="fontS" id="fontSize" class="selects">
-                <option>Fonte</option>
-                <option value="1">Muito pequena</option>
-                <option value="2">Pequena</option>
-                <option value="3">Normal</option>
-                <option value="4">Médio</option>
-                <option value="5">Grande</option>
-                <option value="6">Muito Grande</option>
-                <option value="7">Máximo</option>
-            </select>
+            <div class="fsize-wrapper">
+                <select name="fontS" id="fontSize" class="selects">
+                    <option>Tamanho da Fonte</option>
+                    <option value="1">Muito pequena</option>
+                    <option value="2">Pequena</option>
+                    <option value="3">Normal</option>
+                    <option value="4">Médio</option>
+                    <option value="5">Grande</option>
+                    <option value="6">Muito Grande</option>
+                    <option value="7">Máximo</option>
+                </select>
+            </div>
+
+            <div class="title-wrapper">
+                <select name="title" id="fontTitles" class="selects">
+                    <option>Títulos</option>
+                    <option value="h1">Titulo 1</option>
+                    <option value="h2">Titulo 2</option>
+                    <option value="h3">Titulo 3</option>
+                    <option value="h4">Titulo 4</option>
+                    <option value="h5">Titulo 5</option>
+                    <option value="h6">Titulo 6</option>
+                    <option value="p">Parágrafo</option>
+                </select>
+            </div>
+
+            <div class="font-wrapper">
+                <select name="fontF" id="fontFamilies" class="selects">
+                    <option>Tipo da Fonte</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Arial Black">Arial Black</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="sans-serif">Sans-serif</option>
+                    <option value="monospace">Monospace</option>
+                </select>
+            </div>
 
         </section>
         <section onload="load()" id="editor" contenteditable="true" class="editor"></section>

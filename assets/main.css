@@ -43,7 +43,8 @@ main{
 }
 
 .container-fonts{
-    padding: 0.5em 1.5em;
+    padding: 0 1.5em;
+    padding-bottom: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,6 +52,14 @@ main{
     /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
     background-color: var(--container-clr);
+}
+
+.fsize-wrapper, 
+.title-wrapper,
+.font-wrapper{
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .editor{
