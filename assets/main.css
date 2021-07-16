@@ -1,9 +1,11 @@
-*{
+*, *::before, *::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --container-clr: hsl(0, 0%, 93%);
+}
 body{
     min-height: calc(100vh - 3rem);
     display: grid;
@@ -27,45 +29,54 @@ main{
     align-items: center;
     
 }
-.container-options{
-    width: 80%;
-    padding: 1em 1.5em;
 
+.alignment-options, 
+.text-options, 
+.other-options{
+    width: 30%;
+    gap: 0.75em;
+}
+
+.container-options{
+    padding: 1em 1.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    /* box-shadow: 1px 0 0.3rem rgba(0, 0, 0, 0.473); */
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 
-    background-color: hsl(0, 0%, 93%);
+    background-color: var(--container-clr);
 }
-.list-options{
-    list-style: none;
+
+.container-fonts{
+    padding: 0 1.5em;
+    padding-bottom: 1em;
     display: flex;
-    margin: 0 1em;
-    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
 
-    /* background-color: lightcoral; */
+    /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+    background-color: var(--container-clr);
 }
 
-.btn-option{
-    background: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
+.fsize-wrapper, 
+.title-wrapper,
+.font-wrapper{
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .editor{
     min-height: 30em;
     width: 80%;
-
+    max-width: 1100px;
     padding: 1em 0.75em;
 
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    /* box-shadow: 0 15px 1rem grey; */
     
     background-color: white;
     color: black;

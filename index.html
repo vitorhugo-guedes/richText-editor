@@ -7,11 +7,12 @@
     <title>Rich-Text Editor</title>
     <link rel="shortcut icon" href="/assets//icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/utilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <main>
-        <section class="container-options">
+        <section class="container container-options">
 
             <!-- Format options -->
             <ul class="list-options text-options">
@@ -58,7 +59,7 @@
             </ul>
 
             <!-- Font Options -->
-            <ul class="list-options font-options">
+            <ul class="list-options other-options">
                 
                 <li class="option" data-command="undo">
                     <button class="btn-option" title="Desfazer | Undo"><i class="fas fa-undo fa-2x"></i></button>
@@ -67,12 +68,54 @@
                     <button class="btn-option" title="Refazer | Redo"><i class="fas fa-redo fa-2x"></i></button>
                 </li>
                 <li class="option" data-command="createLink">
-                    <button class="btn-option" title="Incluir Link | Insert Link"><i class="fas fa-link fa-2x"></i></button>
+                    <button class="btn-option " title="Incluir Link | Insert Link"><i class="fas fa-link fa-2x "></i></button>
                 </li>
                 <!-- <li class="option" data-command="insertImage">
                     <button class="btn-option" title="Desfazer | Undo"><i class="fas fa-file-image fa-2x"></i></button>
                 </li> -->
             </ul>
+        </section>
+
+        <section class="container container-fonts">
+
+            <div class="fsize-wrapper">
+                <select name="fontS" id="fontSize" class="selects">
+                    <option>Tamanho da Fonte</option>
+                    <option value="1">Muito pequena</option>
+                    <option value="2">Pequena</option>
+                    <option value="3">Normal</option>
+                    <option value="4">Médio</option>
+                    <option value="5">Grande</option>
+                    <option value="6">Muito Grande</option>
+                    <option value="7">Máximo</option>
+                </select>
+            </div>
+
+            <div class="title-wrapper">
+                <select name="title" id="fontTitles" class="selects">
+                    <option>Títulos</option>
+                    <option value="h1">Titulo 1</option>
+                    <option value="h2">Titulo 2</option>
+                    <option value="h3">Titulo 3</option>
+                    <option value="h4">Titulo 4</option>
+                    <option value="h5">Titulo 5</option>
+                    <option value="h6">Titulo 6</option>
+                    <option value="p">Parágrafo</option>
+                </select>
+            </div>
+
+            <div class="font-wrapper">
+                <select name="fontF" id="fontFamilies" class="selects">
+                    <option>Tipo da Fonte</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Arial Black">Arial Black</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="sans-serif">Sans-serif</option>
+                    <option value="monospace">Monospace</option>
+                </select>
+            </div>
+
         </section>
         <section onload="load()" id="editor" contenteditable="true" class="editor"></section>
     </main>

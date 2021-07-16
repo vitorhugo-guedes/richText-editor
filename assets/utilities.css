@@ -1,0 +1,31 @@
+.container{
+    width: 80%;
+    max-width: 1100px;
+}
+.list-options{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* gap: 1em; */
+}
+
+.selects{
+    width: 50%;
+    min-width: 130px;
+    border: none;
+    padding: 0.175em;
+    font-weight: 600;
+    
+    color: #fff;
+    background-color: #696969;
+}
+.selects:focus{
+    border: none;
+    outline: none;
+}
+.btn-option{
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
