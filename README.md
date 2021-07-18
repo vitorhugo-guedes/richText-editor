@@ -18,25 +18,28 @@
  <a href="#autor">Autor</a>
 </p>
 
-## :pushpin: Objetivo
+<br>
+
+## Objetivo
 Construir um aprendizado em UX e UI, como, também, resolver problemas de compatibilidade entre navegadores diferentes.
 No final, obter um editor que seja agradável e que possua opções suficientes para que possa ser usado pelas pessoas.
 
 <br>
 
-## ✔️ Features
+## Features
 
-- [ ] Formatação básica de texto (negrito, itálico, etc)
-- [ ] Opções de fontes diferentes
-- [ ] Tamanhos de fontes diferentes
-- [ ] Alinhamento de texto
+- [x] Formatação básica de texto (negrito, itálico, etc)
+- [x] Opções de fontes diferentes
+- [x] Tamanhos de fontes diferentes
+- [x] Alinhamento de texto
 - [ ] Modo escuro e modo sépia
 - [ ] Salvar o conteúdo escrito
 - [ ] Download do conteúdo em pdf
+- [ ] Layout mobile funcional
 
 <br>
 
-## 🛠 Tecnologias
+## Tecnologias
 
 - HTML
 - CSS
@@ -44,7 +47,7 @@ No final, obter um editor que seja agradável e que possua opções suficientes 
 
 <br>
 
-## 📫 Autor
+## Autor
 Feito por Vitor Guedes :heart: entre em contato:
 
 [![Twitter Badge](https://img.shields.io/badge/-@HugoXala7-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/HugoXala7)](https://twitter.com/HugoXala7)
