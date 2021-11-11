@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 :root{
-    --container-clr: hsl(0, 0%, 93%);
+    --clr-bg-body: #646b72;
+    --def-clr-footer: #2e2e2e;
+    --hover-clr-footer: #F4F482;
+    --hover-clr-twitter_icon: #1A91DA;
+    --hover-clr-github_icon: #000;
+
+    --select-clr: #687179;
+    --container-clr: #909fad;
 }
 
 body{
@@ -12,11 +19,12 @@ body{
     display: grid;
     place-items: center;
     font-family: Verdana, Tahoma, sans-serif;
-    background-color: hsl(0, 0%, 67%);
+    background-color: var(--clr-bg-body);
 }
 
+
 footer{
-    color: #3b3b3b;
+    color: var(--def-clr-footer);
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: lighter;
 }
@@ -25,10 +33,19 @@ footer h4{
     margin-top: 1em;
 }
 footer h4:hover{
-    color: #F4F482;
+    color: var(--hover-clr-footer);
 }
 
-main{
+header{
+    padding: 0em;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
     padding: 3em 0;
     width: 100%;
 
@@ -36,7 +53,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .alignment-options, 
@@ -53,6 +69,24 @@ main{
     justify-content: center;
 }
 
+.selects{
+    width: 50%;
+    min-width: 130px;
+    padding: 0.175em;
+    
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.040em;
+
+    border: none;
+    color: #fff;
+    background-color: var(--select-clr);
+}
+.selects:focus{
+    border: none;
+    outline: none;
+}
+
 .container-options{
     padding: 1em 1.5em;
     display: flex;
@@ -66,14 +100,12 @@ main{
 }
 
 .container-fonts{
-    padding: 0 1.5em;
-    padding-bottom: 1em;
+    width: 100%;
+    padding: 0.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
     background-color: var(--container-clr);
 }
 
@@ -100,11 +132,11 @@ main{
 }
 .social-links a{
     text-decoration: none;
-    color: #3b3b3b;
+    color: var(--def-clr-footer);
 }
 .twitter:hover{
-    color: #1A91DA;
+    color: var(--hover-clr-twitter_icon);
 }
 .github:hover{
-    color: #000;
+    color: var(--hover-clr-github_icon);
 }

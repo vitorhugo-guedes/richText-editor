@@ -9,23 +9,7 @@
     /* gap: 1em; */
 }
 
-.selects{
-    width: 50%;
-    min-width: 130px;
-    padding: 0.175em;
-    
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.040em;
 
-    border: none;
-    color: #fff;
-    background-color: #696969;
-}
-.selects:focus{
-    border: none;
-    outline: none;
-}
 .btn-option{
     background: none;
     cursor: pointer;
